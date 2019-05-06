@@ -43,34 +43,54 @@
                 <form action="">
                         <div class="username length">
                             <input type="text" placeholder="邮箱/手机号/用户名" class="user">
-                            <i>不能为空</i>
+                            <i class="usertip">不能为空</i>
                             <span></span>
                         </div>
                         <div class="password length">
-                            <input type="password" placeholder="登录密码" >
+                            <input type="password" placeholder="登录密码" class="pass">
                             <span class="tip"><a href="#">忘记密码？</a></span>
                             <span></span>
                         </div>
                         <div class="yzm length">
-                            <input type="text" placeholder="验证码">
-                            <i></i>
-                            <img  alt="验证码" src="https:/sso/getSecurityCode.action?t=1557105070997">
-                            <a href="#">换一张</a>
-                            <span>请输入验证码</span>
+                            <input type="text" placeholder="验证码" class="yanzcode">
+                            <i ></i>
+                            <img  alt="验证码" src="http://passport.111.com.cn/sso/getSecurityCode.action?t=1557122495201">
+                            <a href="#" class="change">换一张</a>
+                            <span class="inputyzm">请输入验证码</span>
                         </div>
                         <div class="loginbtn">
                             <label for="">
-                                <input type="checkbox">
-                                <span>两周内免登录</span>
+                                <input type="checkbox" class="check">
+                                <span class="twoweeks">两周内免登录</span>
                             </label>
                             <button>登录</button><br>
                             <span></span>
                         </div>
+                        <div class="agree">
+                            <span class="two_week">登录即代表您已同意1药网
+                            <a class="blue_link" href="javascript:;">《服务协议》</a>
+                            和
+                            <a class="blue_link" href="javascript:;">《隐私条款》</a>
+                            </span>
+                        </div>
+                        <div class="partner length">
+                            <p>使用合作伙伴账号登录：</p>
+                            <a href="#">微信</a>
+                            <a  href="#">支付宝</a>
+                            <a  href="#">QQ</a>
+            
+                        </div>
                     </form>
             </div>
-           
         </div>
     </div>
+    <div class="footer">
+
+    </div>
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
+    <script>
+    $('.footer').load('_footer.html')
+    </script>
 </body>
 
 </html>

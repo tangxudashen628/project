@@ -1,0 +1,149 @@
+.wrapper {
+  width: 990px;
+  margin: 0 auto; }
+
+.logo {
+  height: 98px; }
+
+.registor {
+  position: relative;
+  background: #fff url(https://s.maiyaole.com/images/passport/r_bg_02.png) no-repeat right bottom;
+  width: 988px;
+  min-height: 352px;
+  color: #5e5e5e;
+  border: #e6e6e6 1px solid;
+  border-top: #0083ce 2px solid;
+  box-shadow: -1px 1px 10px #EFEFEF, -1px 10px 10px #EFEFEF;
+  padding-bottom: 20px; }
+  .registor h2 {
+    font: 20px "microsoft yahei";
+    margin: 13px 0;
+    padding-left: 50px;
+    padding-right: 18px; }
+    .registor h2 span {
+      float: right;
+      font-size: 12px;
+      margin-top: 7px;
+      font-family: \5b8b\4f53; }
+  .registor .form {
+    padding-left: 100px;
+    padding-top: 5px; }
+    .registor .form .length {
+      min-height: 70px;
+      width: 342px;
+      position: relative; }
+      .registor .form .length .form-control {
+        display: block;
+        width: 286px;
+        height: 26px;
+        padding: 6px 12px 6px 40px;
+        font-size: 14px;
+        background-color: transparent;
+        background: url(https://s.maiyaole.com/images/passport/regest.png) no-repeat; }
+      .registor .form .length .phone {
+        background-position: 8px -114px; }
+      .registor .form .length .pass {
+        background-position: 8px -145px; }
+      .registor .form .length .surepass {
+        background-position: 8px -145px; }
+      .registor .form .length .i_empty {
+        height: 16px;
+        width: auto;
+        float: right;
+        padding-right: 25px;
+        margin-top: -28px;
+        display: none;
+        background: url(https://s.maiyaole.com/images/passport/regest.png) no-repeat right -57px; }
+      .registor .form .length .i_true {
+        height: 16px;
+        width: auto;
+        float: right;
+        padding-right: 25px;
+        margin-top: -28px;
+        display: none;
+        background: url(https://s.maiyaole.com/images/passport/regest.png) no-repeat right 2px; }
+      .registor .form .length .password-tip {
+        line-height: 24px;
+        color: #a5a5a5;
+        font-size: 12px;
+        display: none; }
+      .registor .form .length .passsafety {
+        float: right;
+        line-height: 24px;
+        color: #a5a5a5;
+        display: none; }
+        .registor .form .length .passsafety li {
+          float: left;
+          height: 14px;
+          line-height: 14px;
+          padding: 0 9px;
+          border-right: 1px solid #fff;
+          font-family: \5b8b\4f53;
+          color: #fff; }
+    .registor .form .caps {
+      margin-top: -30px;
+      margin-bottom: 10px;
+      width: 338px;
+      background-color: #ffffe5;
+      border: 1px solid #fadd87;
+      color: #f60;
+      position: relative;
+      display: none; }
+      .registor .form .caps .caps-i {
+        background: url(https://s.maiyaole.com/images/passport/regest.png) no-repeat 5px -50px;
+        display: inline-block;
+        height: 30px;
+        margin-right: 10px;
+        vertical-align: middle;
+        width: 20px; }
+      .registor .form .caps .caps-em {
+        background: url(https://s.maiyaole.com/images/cart/scbgv.png) no-repeat -15px -62px;
+        bottom: -9px;
+        height: 9px;
+        left: 38px;
+        position: absolute;
+        width: 15px; }
+    .registor .form .checkbox {
+      display: block;
+      min-height: 20px;
+      margin-top: 0px;
+      margin-bottom: 6px; }
+      .registor .form .checkbox span {
+        font-size: 12px; }
+        .registor .form .checkbox span a {
+          color: #0083ce; }
+    .registor .form .btn {
+      display: inline-block;
+      margin-bottom: 0;
+      font-weight: bold;
+      text-align: center;
+      vertical-align: middle;
+      cursor: pointer;
+      background-image: none;
+      border: 1px solid transparent;
+      white-space: nowrap;
+      padding: 6px 12px;
+      font-size: 14px;
+      background-color: #0099F1;
+      width: 340px;
+      border-bottom: #0083ce 2px solid;
+      color: #fff;
+      font: 16px "microsoft yahei";
+      border-radius: 1px; }
+    .registor .form .partner p {
+      margin-top: 10px;
+      line-height: 24px;
+      color: #5e5e5e;
+      font-size: 12px; }
+    .registor .form .partner a {
+      line-height: 24px;
+      color: #a5a5a5;
+      text-indent: -9999px;
+      background: url(https://s.maiyaole.com/images/201306/images/private/img_zhifu.png) no-repeat left top;
+      display: block;
+      float: left;
+      height: 39px;
+      margin-right: 18px;
+      width: 39px; }
+
+/*# sourceMappingURL=registor.css.map */

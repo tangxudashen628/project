@@ -1,0 +1,83 @@
+
+.footer-4 {
+    background: #f0f0f0;
+    margin-top: 65px;
+    padding-top: 45px;
+    clear: both;
+    font-size: 12px; }
+    .footer-4 .footer_bottom_unit {
+      position: relative;
+      padding-left: 215px;
+      padding-top: 15px;
+      margin-left: 150px; }
+      .footer-4 .footer_bottom_unit .footer_logo_img {
+        position: absolute;
+        left: 0;
+        top: 30px; }
+      .footer-4 .footer_bottom_unit .help_part {
+        border-bottom: 1px solid #e5e5e5;
+        padding-bottom: 25px;
+        overflow: hidden; }
+        .footer-4 .footer_bottom_unit .help_part dl {
+          float: left;
+          width: 155px; }
+          .footer-4 .footer_bottom_unit .help_part dl dt {
+            font-weight: bold;
+            color: #1c1c1c;
+            font-size: 15px;
+            padding-bottom: 10px; }
+          .footer-4 .footer_bottom_unit .help_part dl dd {
+            line-height: 26px; }
+            .footer-4 .footer_bottom_unit .help_part dl dd a {
+              color: #666; }
+      .footer-4 .footer_bottom_unit .copy_right {
+        padding: 5px 0 30px;
+        text-align: center; }
+        .footer-4 .footer_bottom_unit .copy_right .yyw_member {
+          padding-top: 25px; }
+          .footer-4 .footer_bottom_unit .copy_right .yyw_member .member_mark {
+            color: #666;
+            float: left;
+            line-height: 56px;
+            display: block; }
+          .footer-4 .footer_bottom_unit .copy_right .yyw_member .member_ul {
+            height: 56px;
+            float: left;
+            font-weight: bold;
+            font-size: 14px;
+            color: #333;
+            text-align: left;
+            margin-left: 15px; }
+            .footer-4 .footer_bottom_unit .copy_right .yyw_member .member_ul li {
+              width: 270px;
+              float: left;
+              line-height: 56px; }
+              .footer-4 .footer_bottom_unit .copy_right .yyw_member .member_ul li img {
+                width: 56px;
+                height: 56px;
+                margin-right: 10px; }
+      .footer-4 .footer_bottom_unit .bottom_link {
+        text-align: left;
+        line-height: 30px;
+        padding-top: 60px;
+        margin-left: -20px; }
+        .footer-4 .footer_bottom_unit .bottom_link a {
+          margin: 0 20px;
+          color: #666; }
+      .footer-4 .footer_bottom_unit .copy_info {
+        text-align: left;
+        color: #999;
+        line-height: 20px;
+        padding-top: 15px; }
+      .footer-4 .footer_bottom_unit .sf_verify {
+        padding: 10px 0 0 10px;
+        clear: both; }
+        .footer-4 .footer_bottom_unit .sf_verify a {
+          background-image: url(https://s.maiyaole.com/images/201306/img/outherLogo_min.png);
+          background-repeat: no-repeat;
+          overflow: hidden;
+          float: left;
+          zoom: 1;
+          width: 88px;
+          height: 35px;
+          text-indent: -9999px; }

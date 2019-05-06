@@ -8,6 +8,208 @@
 
 @import "header";
 
+//内容导航
+.main-top {
+    height: 46px;
+    border-bottom: 2px solid #d2b994;
+
+    .wrapper {
+        position: relative;
+    }
+
+    .allsort {
+        width: 180px;
+
+        .sort {
+            position: absolute;
+            z-index: 100;
+            display: block;
+            font: 400 15px/48px tahoma,arial,Microsoft YaHei;
+            color: #fff;
+            width: 166px;
+            padding: 0 0 0 14px;
+            height: 48px;
+            background-color: #19323a;
+            background-position: right -438px;
+            font-weight: 700;
+        }
+
+        // 商品列表下面的导航
+        .sortnav {
+            height: 400px;
+            width: 180px;
+            background: #314349;
+            margin-top: 40px;
+            position: relative;
+
+            .nav-text {
+                display: block;
+                width: 180px;
+                height: 40px;
+                color: #fff;
+
+                i {
+                    float: left;
+                    font-size: 24px;
+                    line-height: 24px;
+                    color: #fff;
+                    margin-top: 10px;
+                    display: block;
+                    width: 24px;
+                    height: 24px;
+                }
+
+                h4 {
+                    margin-left: 32px;
+                    font-size: 14px;
+                    height: 40px;
+                    line-height: 40px;
+                }
+            }
+        }
+    }
+
+    //商品列表右边的导航
+    ul {
+        float: left;
+        margin-top: 10px;
+        background: #fff;
+        font-family: tahoma,arial,\5b8b\4f53;
+        vertical-align: middle;
+
+        li {
+            float: left;
+
+            a {
+                padding: 0 15px;
+                color: #505050;
+                font-weight: bold;
+            }
+        }
+
+        .red {
+            color: #e54948;
+        }
+    }
+
+    .cart {
+        width: 140px;
+        font-size: 12px;
+        position: absolute;
+        top: -95px;
+        right: 0px;
+        margin-bottom: -41px;
+        z-index: 99;
+        border: 1px solid #eee;
+
+        a {
+            background: url(https://s.maiyaole.com/images/201306/images/common_sprite.png?t==20141218) no-repeat right 0;
+            background-position: 10px -312px;
+            display: block;
+            height: 36px;
+            line-height: 36px;
+            position: relative;
+            color: #5e5e5e;
+
+            em {
+                display: block;
+                position: absolute;
+                float: left;
+                top: 3px;
+                line-height: 10px;
+                width: auto;
+                min-width: 12px;
+                text-align: center;
+                left: 30px;
+                font-weight: 700;
+                font-family: tahoma;
+                font-style: normal;
+                color: #fff;
+                font-size: 12px;
+                height: 12px;
+                padding: 2px;
+                background: red;
+                border-radius: 16px;
+            }
+
+            span {
+                background: url(https://s.maiyaole.com/images/201306/images/common_sprite.png?t==20141218) no-repeat right 0;
+                width: 50px;
+                left: 55px;
+                background-position: -110px -312px;
+                padding-right: 15px;
+                position: absolute;
+            }
+        }
+    }
+}
+
+//主要二级导航
+.category {
+    width: 1030px;
+    position: absolute;
+    top: 0;
+    left: 180px;
+    height: 400px;
+    z-index: 101;
+    background: #fff;
+    border-bottom: 1px solid #e8e8e7;
+    border-right: 1px solid #e8e8e7;
+    clear: both;
+    display: none;
+
+    .category-left {
+        vertical-align: middle;
+        width: 255px;
+        height: 399px;
+        overflow: hidden;
+        float: left;
+
+        a {
+            padding: 0;
+            margin: 0;
+        }
+
+        dl {
+            display: block;
+            font-size: 12px;
+            background: #fff;
+            float: left;
+
+            dt {
+                margin: 6px 0 0 23px;
+                padding: 0;
+                line-height: 20px;
+                height: 20px;
+                font-weight: 700;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+            }
+
+            dd {
+                color: #999;
+                line-height: 1.6;
+                margin: 0 0 0 23px;
+                padding: 0 0 6px 0;
+                text-overflow: ellipsis;
+                overflow: hidden;
+
+                em {
+                    margin: 8px 6px 0 -8px;
+                    padding: 1px 6px 0 7px;
+                    display: inline-block;
+                    font-style: normal;
+                    border-left: #ddd 1px solid;
+                    font-weight: 400;
+                    line-height: 1;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+
 //内容 轮播图+右边
 .main {
     height: 400px;
@@ -450,23 +652,68 @@
         height: 52px;
         text-indent: -9999px;
     }
-    .f-talk{
+
+    .f-talk {
         background-position: 0 -622px;
     }
-    .f-list{
-        background-position:-52px -725px;
 
+    .f-list {
+        background-position: -52px -725px;
     }
-    .f-cart{
-        background-position:0 -674px;
 
+    .f-cart {
+        background-position: 0 -674px;
     }
-    .f-back{
-        background-position:0 -777px;
 
+    .f-back {
+        background-position: 0 -777px;
     }
-    .f-top{
-        background-position:0 -827px;
-        
+
+    .f-top {
+        background-position: 0 -827px;
+    }
+}
+
+// 楼梯
+.elevator {
+    position: fixed;
+    z-index: 99;
+    right: 50%;
+    top: 130px;
+
+    // display: none;
+    margin-right: 600px;
+
+    li {
+        cursor: pointer;
+        height: 40px;
+        line-height: 40px;
+        overflow: hidden;
+        text-align: center;
+        width: 48px;
+        border: 1px solid #E6E6E6;
+        border-bottom: none;
+        background-color: #fff;
+
+        a {
+            color: #5e5e5e;
+            display: block;
+            font-family: Arial;
+            font-size: 14px;
+            text-decoration: none;
+        }
+    }
+
+    .ele-first {
+        display: block;
+        width: 48px;
+        border: 1px solid #E6E6E6;
+        border-bottom: none;
+        text-align: center;
+        color: #157CDB;
+        padding: 5px 0;
+        text-decoration: none;
+        font-family: "Microsoft YaHei";
+        font-size: 12px;
     }
 }

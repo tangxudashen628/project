@@ -1,0 +1,172 @@
+@charset "utf-8";
+
+.wrap {
+    width: 300px;
+    height: 400px;
+    margin: 0 auto;
+    position: relative;
+    float: left;
+}
+
+#spic {
+    width: 300px;
+    height: 300px;
+
+    float: left;
+    position: relative;
+}
+
+#spic img {
+    width: 300px;
+    height: 300px;
+}
+
+#sf {
+    
+    background: orange;
+    opacity: 0.3;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    visibility: hidden;
+    cursor: move;
+}
+
+#bf {
+    width: 400px;
+    height: 500px;
+    border: 1px solid #000;
+    float: left;
+    overflow: hidden;
+    position: absolute;
+    left: 420px;
+    top: 0 ;
+    visibility:hidden;
+}
+
+#bf img {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+#ulist {
+    position: absolute;
+    left: 0px;
+    bottom: 15px;
+    width: 402px;
+    height: 56px;
+    overflow: hidden;
+}
+
+#ulist a {
+    float: left;
+    width: 10px;
+    height: 54px;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    line-height: 56px;
+    text-align: center;
+    background: #fff;
+}
+
+#list {
+    float: left;
+    margin-left: 18px;
+    width: 372px;
+    position: relative;
+}
+
+#list ul {
+    list-style: none;
+    float: left;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+#list ul li {
+    float: left;
+    width: 56px;
+    height: 56px;
+    padding-right: 6px;
+    cursor: pointer;
+}
+
+ul li img {
+    width: 52px;
+    height: 52px;
+    border: 1px solid #ccc;
+}
+.box_right{
+    .clearfix{
+        height:40px;
+        padding-bottom: 15px;
+        line-height: 20px;
+        dt{
+            float: left;
+            width: 55px;
+      
+            text-align: right;
+            line-height: 36px;
+        }
+        dd{
+            .num_section{
+                position: relative;
+                .num_box{
+                    position: relative;
+                    width: 106px;
+                    float: left;
+                    z-index: 10;
+                    .num{
+                        width: 73px;
+                        height: 38px;
+                        line-height: 38px;
+                        padding: 0 5px;
+                        border: 1px solid #e6e6e6;
+                        font-size: 14px;
+                    }
+                    .num_pre{
+                        background: url(https://s.maiyaole.com/images/product/icon_detail.png?t==20141219) no-repeat;
+                        background-position: -131px -842px;
+                        height: 19px;
+                        width: 19px;
+                        display: block;
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                        border: none;
+                        cursor: pointer;
+                    }
+                    .num_next{
+                        background: url(https://s.maiyaole.com/images/product/icon_detail.png?t==20141219) no-repeat;
+                        background-position: -131px -863px;
+                        height: 19px;
+                        width: 19px;
+                        display: block;
+                        position: absolute;
+                        right: 0;
+                        bottom: 0;
+                        border: none;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+    button{
+        background: url(https://s.maiyaole.com/images/product/icon_detail.png?t==20141219) no-repeat;
+        background-color: #e72418;
+        background-position: 50px -763px;
+        background-repeat: no-repeat;
+        border: none;
+        border: 0 solid #9a0900;
+        height: 50px;
+        padding: 0 60px 0 90px;
+        border-bottom: 3px solid #9a0900;
+        color: #fff;
+        font-size: 18px;
+        cursor: pointer;
+        
+    }
+}

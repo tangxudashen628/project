@@ -123,20 +123,21 @@
     .length {
         width: 340px;
         position: relative;
-        min-height:68px;
+        min-height: 68px;
+
         .user {
             display: block;
             width: 286px;
             height: 26px;
             padding: 6px 12px 6px 40px;
             font-size: 14px;
-            line-height: 1.428571429;
             background-color: transparent;
             border: 1px solid #e6e6e6;
             background: url(https://s.maiyaole.com/images/passport/regest.png) no-repeat 8px -114px;
         }
-        i{
-            // display: none;
+
+        .usertip {
+            display: none;
             height: 16px;
             width: auto;
             float: right;
@@ -144,7 +145,135 @@
             margin-top: -28px;
             background: url(https://s.maiyaole.com/images/passport/regest.png) no-repeat right -57px;
             font-style: normal;
+        }
 
+        .pass {
+            display: block;
+            width: 286px;
+            height: 26px;
+            padding: 6px 12px 6px 40px;
+            font-size: 14px;
+            background: url(https://s.maiyaole.com/images/passport/regest.png) no-repeat 8px -145px;
+            background-color: transparent;
+            border: 1px solid #e6e6e6;
+        }
+
+        .tip {
+            float: right;
+
+            a {
+                font-size: 12px;
+                color: #333;
+            }
+        }
+
+        .yanzcode {
+            width: 150px;
+            margin-right: 10px;
+            float: left;
+            display: block;
+            height: 26px;
+            padding: 6px 12px 6px 10px;
+            font-size: 14px;
+            background-color: transparent;
+            border: 1px solid #e6e6e6;
+        }
+
+        img {
+            float: left;
+            margin-left: 10px;
+        }
+
+        .change {
+            float: left;
+            margin-left: 10px;
+            line-height: 40px;
+            color: #0083ce;
+            font-size: 12px;
+        }
+
+        .inputyzm {
+            color: #e72418;
+            font-size: 12px;
+            display: none;
+        }
+    }
+
+    :focus {
+        border-color: #0083ce;
+        color: #333;
+    }
+
+    .loginbtn {
+        display: block;
+        min-height: 20px;
+        margin-top: 0px;
+        margin-bottom: 6px;
+        padding-left: 20px;
+
+        .check {
+            float: left;
+            margin-left: -20px;
+        }
+
+        .twoweeks {
+            font-size: 12px;
+        }
+
+        button {
+            display: inline-block;
+            font-weight: bold;
+            text-align: center;
+            vertical-align: middle;
+            cursor: pointer;
+            border: 1px solid transparent;
+            padding: 6px 12px;
+            font-size: 14px;
+            background-color: #0099F1;
+            width: 326px;
+            border-bottom: #0083ce 2px solid;
+            color: #fff;
+            font: 18px "microsoft yahei";
+            margin: 10px 0  0 -20px;
+        }
+    }
+
+    .agree {
+        padding-top: 10px;
+
+        span {
+            font-size: 12px;
+        }
+
+        a {
+            font-size: 12px;
+            color: #0083ce;
+        }
+    }
+
+    .partner {
+        padding-bottom: 15px;
+        clear: both;
+        overflow: hidden;
+
+        p {
+            margin-top: 5px;
+            line-height: 24px;
+            color: #5e5e5e;
+            font-size: 12px;
+        }
+
+        a {
+            background: url(https://s.maiyaole.com/images/201306/images/private/img_zhifu.png) no-repeat -294px 0;
+            line-height: 24px;
+            color: #a5a5a5;
+            text-indent: -9999px;
+            display: block;
+            float: left;
+            height: 39px;
+            margin-right: 18px;
+            width: 39px;
+            border: none;
         }
     }
 }
