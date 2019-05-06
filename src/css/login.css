@@ -1,0 +1,111 @@
+.wrapper {
+  width: 990px;
+  margin: 0 auto; }
+
+.logo {
+  height: 98px; }
+
+.login {
+  position: relative;
+  background: #fff url(https://s.maiyaole.com/images/passport/l_bg_02.png) no-repeat left top;
+  width: 988px;
+  min-height: 335px;
+  color: #5e5e5e;
+  border: #e6e6e6 1px solid;
+  border-top: #0083ce 2px solid;
+  -webkit-box-shadow: -1px 1px 10px #EFEFEF, -1px 10px 10px #EFEFEF;
+  -moz-box-shadow: -1px 1px 10px #EFEFEF, -1px 10px 10px #EFEFEF;
+  box-shadow: -1px 1px 10px #EFEFEF, -1px 10px 10px #EFEFEF;
+  padding-top: 8px; }
+  .login .bglink {
+    position: absolute;
+    left: 0;
+    top: 0;
+    text-indent: -9999px;
+    display: block;
+    width: 560px;
+    height: 363px; }
+
+.tab {
+  height: 25px;
+  margin-left: 560px;
+  padding: 10px 0;
+  padding-top: 2px;
+  border-bottom: 1px solid #e2e2e2; }
+  .tab ::before {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background-color: #e2e2e2; }
+  .tab .item1 {
+    float: left;
+    position: relative;
+    width: 50%;
+    text-align: center;
+    font-size: 14px;
+    line-height: 25px; }
+    .tab .item1 a {
+      display: block;
+      position: relative;
+      margin: 0 30px; }
+    .tab .item1 ::before {
+      display: block;
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 2px;
+      left: 0;
+      background-color: #2C9EE0; }
+  .tab .active a {
+    color: #2C9EE1; }
+  .tab .item2 {
+    float: left;
+    position: relative;
+    width: 50%;
+    text-align: center;
+    font-size: 14px;
+    line-height: 25px; }
+    .tab .item2 a {
+      display: block;
+      position: relative;
+      color: #333; }
+
+.welcome {
+  margin-left: 560px;
+  padding: 0 30px; }
+  .welcome h2 {
+    margin: 13px 0; }
+    .welcome h2 span {
+      float: right;
+      font-size: 12px;
+      margin-top: 7px; }
+      .welcome h2 span a {
+        color: #0083ce; }
+  .welcome .length {
+    width: 340px;
+    position: relative;
+    min-height: 68px; }
+    .welcome .length .user {
+      display: block;
+      width: 286px;
+      height: 26px;
+      padding: 6px 12px 6px 40px;
+      font-size: 14px;
+      line-height: 1.428571429;
+      background-color: transparent;
+      border: 1px solid #e6e6e6;
+      background: url(https://s.maiyaole.com/images/passport/regest.png) no-repeat 8px -114px; }
+    .welcome .length i {
+      height: 16px;
+      width: auto;
+      float: right;
+      padding-right: 25px;
+      margin-top: -28px;
+      background: url(https://s.maiyaole.com/images/passport/regest.png) no-repeat right -57px;
+      font-style: normal; }
+
+/*# sourceMappingURL=login.css.map */

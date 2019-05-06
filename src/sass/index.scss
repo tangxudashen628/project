@@ -1,0 +1,472 @@
+@charset "utf-8";
+
+//居中盒子
+.wrapper {
+    width: 1190px;
+    margin: 0 auto;
+}
+
+@import "header";
+
+//内容 轮播图+右边
+.main {
+    height: 400px;
+
+    .main-l {
+        width: 750px;
+        float: left;
+        overflow: hidden;
+        position: relative;
+
+        .banner {
+            width: 750px;
+            height: 400px;
+        }
+
+        .tab {
+            position: absolute;
+            bottom: 5px;
+            left: 50%;
+            margin-left: -75px;
+
+            a {
+                text-indent: -999px;
+                overflow: hidden;
+                display: inline-block;
+                height: 16px;
+                width: 16px;
+                border-radius: 50%;
+                background: #3e535a;
+                margin-left: 10px;
+                opacity: 0.5;
+            }
+        }
+    }
+
+    .main-r {
+        width: 259px;
+        float: left;
+        border-right: 1px solid #d2b994;
+        overflow: hidden;
+        border-bottom: 1px solid #d2b994;
+
+        //咨询信息
+        .consult {
+            line-height: 32px;
+            padding-left: 13px;
+            font: 12px tahoma,arial,"Microsoft Yahei",\5b8b\4f53;
+            color: #5E5E5E;
+
+            .bottom {
+                border-bottom: 1px solid #f00;
+                color: #000;
+                font-weight: bold;
+            }
+
+            span {
+                margin-left: 10px;
+                line-height: 22px;
+                color: #707070;
+                cursor: pointer;
+                display: inline-block;
+                padding-top: 5px;
+            }
+        }
+
+        .consult-text {
+            padding-left: 23px;
+            padding-bottom: 8px;
+            overflow: hidden;
+            font-size: 13px;
+            font: 12px tahoma,arial,"Microsoft Yahei",\5b8b\4f53;
+            color: #5E5E5E;
+
+            a {
+                width: 72px;
+                display: inline-block;
+                height: 25px;
+                line-height: 25px;
+                color: #707070;
+
+                i {
+                    background: url(https://s.maiyaole.com/images/201306/images/just_index.png) no-repeat;
+                    background-position: -15px -452px;
+                    width: 6px;
+                    height: 10px;
+                    margin-left: 5px;
+                    position: relative;
+                    top: 1px;
+                    display: inline-block;
+                }
+            }
+
+            :hover {
+                text-decoration: underline;
+            }
+        }
+
+        //广告图
+        .serve-box {
+            margin: 0 13px;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .member {
+            margin-left: 20px;
+            padding-top: 10px;
+
+            span {
+                font-weight: bold;
+                color: #000;
+                padding-bottom: 5px;
+                font-size: 12px;
+            }
+
+            li {
+                width: 44px;
+                height: 44px;
+                border-radius: 5px;
+                border: 1px solid #d0d0d0;
+                float: left;
+                margin-right: 10px;
+                cursor: pointer;
+                position: relative;
+
+                .member-logo {
+                    width: 44px;
+                    height: 44px;
+                    border-radius: 5px;
+                }
+
+                .member-code {
+                    display: none;
+                    position: absolute;
+                    width: 88px;
+                    height: 84px;
+                    border: 1px solid #cccccc;
+                    top: -98px;
+                    margin-left: -20px;
+                }
+            }
+        }
+
+        .goodserve {
+            clear: both;
+
+            .serve-title {
+                height: 24px;
+                padding: 10px 0 0 10px;
+
+                .bottom {
+                    color: #000;
+                    border-bottom: 1px solid #f00;
+                    font-weight: bold;
+                }
+
+                span {
+                    font-size: 12px;
+                    display: inline-block;
+                    margin-left: 10px;
+                    padding-bottom: 2px;
+                    cursor: pointer;
+                }
+            }
+
+            .serve-icon {
+                padding: 8px 0 0 10px;
+                height: 71px;
+                display: block;
+
+                a {
+                    width: 60px;
+                    float: left;
+                    display: block;
+                    text-align: center;
+                    font-size: 12px;
+                    color: #333;
+                }
+
+                i {
+                    background: url(https://s.maiyaole.com/images/201306/images/icon_gonggao.png) no-repeat;
+                    width: 37px;
+                    height: 37px;
+                    display: block;
+                    margin-left: 10px;
+                }
+
+                .serve-icon-1 {
+                    background-position: -42px -44px;
+                }
+
+                .serve-icon-2 {
+                    background-position: -100px -44px;
+                }
+
+                .serve-icon-3 {
+                    background-position: -156px -44px;
+                }
+
+                .serve-icon-4 {
+                    background-position: -214px -44px;
+                }
+            }
+        }
+    }
+}
+
+// 倒计时+4张特殊广告图
+.special-adv {
+    margin: 10px 0;
+    height: 150px;
+
+    .countdown {
+        display: inline-block;
+        width: 170px;
+        height: 150px;
+        margin-right: 0;
+    }
+
+    a {
+        img {
+            width: 250px;
+            height: 150px;
+            border: 0;
+            vertical-align: top;
+        }
+    }
+}
+
+@mixin floor($color) {
+    margin-top: 30px;
+    border: 1px solid #F3F3F3;
+    font-family: "Microsoft Yahei";
+    color: #5e5e5e;
+    width: 1189px;
+    height: 485px;
+    border-top: none;
+    border-bottom: none;
+    border-top: 2px solid $color;
+
+    .floor-l {
+        float: left;
+        width: 180px;
+
+        .floor-name {
+            color: #fff;
+            background: $color;
+            padding-left: 20px;
+            height: 85px;
+            line-height: 85px;
+            font-size: 20px;
+        }
+
+        li {
+            float: left;
+            width: 89px;
+            height: 49px;
+            border: 1px solid #F3F3F3;
+            border-left: none;
+            border-top: none;
+            text-align: center;
+            line-height: 49px;
+            font-size: 14px;
+
+            a {
+                color: #5e5e5e;
+            }
+
+            :hover {
+                text-decoration: underline;
+                color: #ff5247;
+            }
+        }
+    }
+}
+
+// 楼层1-6s
+.floor1 {
+    @include floor(#92c4ff);
+}
+
+.floor2 {
+    @include floor(#ffa27a);
+}
+
+.floor3 {
+    @include floor(#ff6b6b);
+}
+
+.floor4 {
+    @include floor(#f6c89e);
+}
+
+.floor5 {
+    @include floor(#aee177);
+}
+
+.floor6 {
+    @include floor(#ffacd0);
+}
+
+// 底部
+
+.footer-1 {
+    color: #5E5E5E;
+    margin-top: 20px;
+    border: 1px solid #E6E6E6;
+    height: 168px;
+    overflow: hidden;
+    width: 1188px;
+
+    ul {
+        background: #F8F8F8;
+        border-bottom: 1px solid #E6E6E6;
+
+        .active {
+            background: #fff;
+            font-weight: 700;
+            height: 34px;
+            margin-bottom: -1px;
+        }
+
+        li {
+            display: inline-block;
+            width: 178px;
+            height: 33px;
+            border-right: 1px solid #E6E6E6;
+            font-size: 12px;
+            line-height: 33px;
+            text-align: center;
+            cursor: pointer;
+        }
+    }
+
+    .logopic {
+        padding: 8px 0 15px 8px;
+
+        a {
+            background: url(https://s.maiyaole.com/images/201306/images/img_btm_logo.png) no-repeat;
+            float: left;
+            display: block;
+            width: 110px;
+            height: 46px;
+            text-indent: -9999px;
+            margin: 7px 8px 0 0;
+            opacity: .7;
+        }
+    }
+}
+
+.footer-2 {
+    padding-top: 62px;
+    clear: both;
+
+    .footerlogo {
+        width: 1190px;
+        height: 100px;
+        background: url(https://s.maiyaole.com/images/201306/images/jsyhm.png) no-repeat 0 0;
+    }
+}
+
+.footer-3 {
+    margin-top: 60px;
+    height: 98px;
+    margin-bottom: 65px;
+
+    ul {
+        float: left;
+        padding-left: 110px;
+
+        li {
+            width: 255px;
+            float: left;
+
+            .code {
+                width: 94px;
+                height: 94px;
+                float: left;
+                margin-right: 12px;
+            }
+
+            .app-right {
+                padding-top: 27px;
+                font-size: 12px;
+
+                .h2-text {
+                    font-size: 15px;
+                    color: #1c1c1c;
+                    font-weight: bold;
+                    margin-bottom: 3px;
+                }
+            }
+        }
+    }
+
+    .contact {
+        width: 250px;
+        float: right;
+        border-left: 1px solid #eee;
+        text-align: center;
+        padding: 15px 0;
+        margin-right: 50px;
+
+        .tel {
+            font-size: 20px;
+            color: #c7a774;
+            font-weight: 700;
+        }
+
+        .service-time {
+            color: #999;
+            line-height: 18px;
+            padding-top: 8px;
+        }
+    }
+}
+
+@import "footer";
+
+// 右侧固定定位
+.fixed {
+    position: fixed;
+    right: 28px;
+    bottom: 10px;
+    z-index: 100;
+    width: 52px;
+
+    img {
+        width: 52px;
+    }
+
+    a {
+        background: url(https://s.maiyaole.com/images/201306/images/common_sprite.png?t==20141218) no-repeat right 0;
+        display: inline-block;
+        zoom: 1;
+        display: inline-block;
+        width: 52px;
+        height: 52px;
+        text-indent: -9999px;
+    }
+    .f-talk{
+        background-position: 0 -622px;
+    }
+    .f-list{
+        background-position:-52px -725px;
+
+    }
+    .f-cart{
+        background-position:0 -674px;
+
+    }
+    .f-back{
+        background-position:0 -777px;
+
+    }
+    .f-top{
+        background-position:0 -827px;
+        
+    }
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+    <!-- logo -->
+    <div class="logo">
+        <div class="wrapper">
+            <a href="index.html">
+                <img src="https://s.maiyaole.com/images/passport/yao_logo.png" alt="">
+            </a>
+        </div>
+    </div>
+
+    <!-- 登录框 -->
+    <div class="wrapper">
+        <div class="login">
+            <!-- 左侧图 -->
+            <a href="#" class="bg-link ">&nbsp;</a>
+            <!-- 右侧顶部tab -->
+            <div class="tab">
+                <div class="item1 active">
+                    <a href="#">普通登录</a>
+                </div>
+                <div class="item2">
+                    <a href="#">手机快速登录</a>
+                </div>
+            </div>
+            <!-- 表单 -->
+            <div class="welcome">
+                <h2>
+                    <span>还不是1药网会员？<a href="#">免费注册</a></span>
+                    Hi,欢迎登录！
+                </h2>
+                <form action="">
+                        <div class="username length">
+                            <input type="text" placeholder="邮箱/手机号/用户名" class="user">
+                            <i>不能为空</i>
+                            <span></span>
+                        </div>
+                        <div class="password length">
+                            <input type="password" placeholder="登录密码" >
+                            <span class="tip"><a href="#">忘记密码？</a></span>
+                            <span></span>
+                        </div>
+                        <div class="yzm length">
+                            <input type="text" placeholder="验证码">
+                            <i></i>
+                            <img  alt="验证码" src="https:/sso/getSecurityCode.action?t=1557105070997">
+                            <a href="#">换一张</a>
+                            <span>请输入验证码</span>
+                        </div>
+                        <div class="loginbtn">
+                            <label for="">
+                                <input type="checkbox">
+                                <span>两周内免登录</span>
+                            </label>
+                            <button>登录</button><br>
+                            <span></span>
+                        </div>
+                    </form>
+            </div>
+           
+        </div>
+    </div>
+</body>
+
+</html>
