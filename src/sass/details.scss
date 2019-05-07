@@ -22,17 +22,19 @@
 }
 
 #sf {
-    
+    width:100px;
+    height:100px;
     background: orange;
     opacity: 0.3;
     position: absolute;
     left: 0px;
     top: 0px;
-    visibility: hidden;
+    // visibility: hidden;
     cursor: move;
 }
 
 #bf {
+    z-index: 999;
     width: 400px;
     height: 500px;
     border: 1px solid #000;
@@ -41,13 +43,14 @@
     position: absolute;
     left: 420px;
     top: 0 ;
-    visibility:hidden;
+    // visibility:hidden;
 }
 
 #bf img {
     position: absolute;
     left: 0px;
     top: 0px;
+    width:100%;
 }
 
 #ulist {
@@ -87,8 +90,8 @@
 
 #list ul li {
     float: left;
-    width: 56px;
-    height: 56px;
+    width: 50px;
+    height: 50px;
     padding-right: 6px;
     cursor: pointer;
 }

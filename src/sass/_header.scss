@@ -36,11 +36,11 @@
             background: url(https://s.maiyaole.com/images/201306/images/common_sprite.png?t==20141218) no-repeat right 0;
             background-position: right -178px;
 
-            :hover {
+            
+            a:hover {
                 color: #0083ce;
                 text-decoration: underline;
             }
-
             a {
                 color: #5e5e5e;
             }
@@ -65,6 +65,7 @@
                 padding: 0 14px 0 0;
             }
         }
+        
     }
 }
 

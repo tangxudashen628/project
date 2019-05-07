@@ -2,7 +2,7 @@
 
 //居中盒子
 .wrapper {
-    width: 1190px;
+    width: 1200px;
     margin: 0 auto;
 }
 
@@ -52,11 +52,11 @@
                     float: left;
                     font-size: 24px;
                     line-height: 24px;
-                    color: #fff;
                     margin-top: 10px;
                     display: block;
                     width: 24px;
                     height: 24px;
+                    color: #fff;
                 }
 
                 h4 {
@@ -216,13 +216,21 @@
 
     .main-l {
         width: 750px;
+        height: 400px;
         float: left;
         overflow: hidden;
         position: relative;
 
         .banner {
-            width: 750px;
             height: 400px;
+            position: absolute;
+            left: 0;
+            top: 0;
+
+            li {
+                float: left;
+                width: 750px;
+            }
         }
 
         .tab {
@@ -230,6 +238,10 @@
             bottom: 5px;
             left: 50%;
             margin-left: -75px;
+
+            .active {
+                opacity: 1;
+            }
 
             a {
                 text-indent: -999px;
@@ -486,6 +498,49 @@
             }
         }
     }
+
+    .floor-r {
+        img {
+            vertical-align: middle;
+            border: 0;
+            float: left;
+        }
+
+        ul {
+            height: 201px;
+
+            li {
+                float: left;
+                width: 160px;
+                padding: 20px 20px 10px 20px;
+                border-right: 1px solid #F3F3F3;
+                border-bottom: 1px solid #F3F3F3;
+                height: 170px;
+                text-align: center;
+                img {
+                    width: 100px;
+                    height: 100px;
+                    margin-left: 30px;
+                }
+
+                p {
+                    color: #E72418;
+                    font-size: 16px;
+                    font-style: normal;
+                }
+
+                .main-title {
+                    font-size: 14px;
+                    height: 20px;
+                    overflow: hidden;
+                    margin: 15px 0 5px;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    color:#333;
+                }
+            }
+        }
+    }
 }
 
 // 楼层1-6s
@@ -548,8 +603,9 @@
 
     .logopic {
         padding: 8px 0 15px 8px;
+        display: none;
 
-        a {
+        .pic {
             background: url(https://s.maiyaole.com/images/201306/images/img_btm_logo.png) no-repeat;
             float: left;
             display: block;
@@ -559,6 +615,25 @@
             margin: 7px 8px 0 0;
             opacity: .7;
         }
+    }
+
+    .chain {
+        a {
+            float: left;
+            display: block;
+            width: 110px;
+            margin: 7px 8px 0 10px;
+            color: #333;
+            font-size: 12px;
+        }
+
+        :hover {
+            text-decoration: underline;
+        }
+    }
+
+    .show {
+        display: block;
     }
 }
 
@@ -679,10 +754,14 @@
     position: fixed;
     z-index: 99;
     right: 50%;
-    top: 130px;
-
-    // display: none;
+    top: 200px;
+    display: none;
     margin-right: 600px;
+
+    .current {
+        background: #157CDB;
+        color: #fff;
+    }
 
     li {
         cursor: pointer;
@@ -701,6 +780,16 @@
             font-family: Arial;
             font-size: 14px;
             text-decoration: none;
+        }
+
+        .hover {
+            display: none;
+            font-size: 12px;
+            display: block;
+            height: 40px;
+            width: 48px;
+            line-height: 40px;
+            color: #fff;
         }
     }
 
