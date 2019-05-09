@@ -112,7 +112,6 @@
 
 .cart-table-th {
   margin-bottom: 10px;
-  height: 34px;
   border: 1px solid #ececec; }
   .cart-table-th .wp {
     height: 34px;
@@ -124,23 +123,137 @@
     text-align: center;
     font-size: 12px; }
   .cart-table-th .th-item {
-    width: 290px; }
+    width: 290px;
+    text-align: center; }
   .cart-table-th .th-price {
-    width: 100px; }
+    width: 300px;
+    text-align: center; }
   .cart-table-th .th-amount {
-    width: 115px; }
-  .cart-table-th .th-weight {
-    width: 150px; }
-  .cart-table-th .th-location {
-    width: 130px; }
+    width: 115px;
+    text-align: center; }
+    .cart-table-th .th-amount .num {
+      width: 50px; }
   .cart-table-th .th-sum {
     width: 200px; }
   .cart-table-th .th-op {
     width: 150px; }
 
-.order {
-  border: 1px solid #dbdbdb;
-  background-color: #f3f3f3;
-  margin-bottom: 10px; }
+.shop-car-box {
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  background: #FCFCFC;
+  height: 119px; }
+
+.car-chk {
+  padding-top: 20px;
+  width: 50px; }
+
+.car-chk-box div {
+  margin: 0 10px 0 0;
+  width: 15px;
+  height: 15px;
+  display: inline-block; }
+
+.car-pic {
+  width: 342px; }
+
+.car-pic > div {
+  padding-top: 20px; }
+
+.car-pic-left {
+  width: 80px;
+  height: 80px;
+  border: 1px solid #eee;
+  float: left; }
+
+.car-pic-left img {
+  width: 100%;
+  height: 100%; }
+
+.car-pic-right {
+  margin: -3px 0 0 96px;
+  padding-right: 25px; }
+
+.car-pic-right p {
+  margin: 5px 5px 5px 0; }
+
+.car-pic-right a {
+  color: #333; }
+
+.car-init {
+  width: 50px;
+  height: 60px; }
+
+.car-pir {
+  padding-top: 20px;
+  width: 130px;
+  text-align: center; }
+
+.car-pir i {
+  color: #3c3c3c;
+  font-weight: 700;
+  font-family: Verdana, Tahoma, arial; }
+
+.car-num {
+  padding-top: 20px;
+  width: 200px;
+  text-align: center; }
+
+.car-num span {
+  display: inline-block; }
+
+.num-left {
+  margin-left: 20px; }
+
+.num-left, .num-right {
+  background: #fff0e7;
+  border-color: #ffe1d3;
+  color: #efbba9;
+  height: 23px;
+  width: 17px;
+  border: 1px solid #e5e5e5;
+  text-align: center;
+  line-height: 23px; }
+
+.car-num-box {
+  border-color: #efbba9;
+  color: #6c6c6c;
+  width: 39px;
+  height: 15px;
+  line-height: 15px;
+  border: 1px solid #aaa;
+  text-align: center;
+  padding: 4px 0;
+  background-color: #fff;
+  z-index: 2; }
+
+.car-money {
+  padding-top: 20px;
+  width: 120px;
+  text-align: center;
+  margin-left: 10px; }
+
+.car-money span {
+  color: #f40;
+  font-weight: 700; }
+
+.car-del {
+  padding-top: 20px;
+  width: 120px;
+  text-align: center;
+  margin-left: 90px; }
+
+.car-del a {
+  background-image: linear-gradient(to right, #ff5000 0, #ff6f06 100%);
+  background-repeat: repeat-x;
+  border-radius: 4px;
+  background-clip: padding-box;
+  font-size: 14px;
+  font-weight: 700;
+  width: 92px;
+  text-align: center;
+  color: #FFF;
+  display: block;
+  line-height: 25px; }
 
 /*# sourceMappingURL=cart.css.map */

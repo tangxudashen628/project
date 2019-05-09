@@ -11,7 +11,6 @@
 #spic {
     width: 300px;
     height: 300px;
-
     float: left;
     position: relative;
 }
@@ -22,14 +21,13 @@
 }
 
 #sf {
-    width:100px;
-    height:100px;
+   
     background: orange;
     opacity: 0.3;
     position: absolute;
     left: 0px;
     top: 0px;
-    // visibility: hidden;
+    display: none;
     cursor: move;
 }
 
@@ -41,23 +39,24 @@
     float: left;
     overflow: hidden;
     position: absolute;
-    left: 420px;
-    top: 0 ;
-    // visibility:hidden;
+    left: 300px;
+    top: 0;
+    display: none;
 }
 
-#bf img {
+#bpic{
     position: absolute;
     left: 0px;
     top: 0px;
-    width:100%;
+    width: 800px;
+    height:800px;
 }
 
 #ulist {
     position: absolute;
     left: 0px;
     bottom: 15px;
-    width: 402px;
+    width: 312px;
     height: 56px;
     overflow: hidden;
 }
@@ -101,27 +100,44 @@ ul li img {
     height: 52px;
     border: 1px solid #ccc;
 }
-.box_right{
-    .clearfix{
-        height:40px;
+#right {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    color: #333;
+}
+
+#left {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 2;
+    color: #fff;
+}
+.box_right {
+    .clearfix {
+        height: 40px;
         padding-bottom: 15px;
         line-height: 20px;
-        dt{
+
+        dt {
             float: left;
             width: 55px;
-      
             text-align: right;
             line-height: 36px;
         }
-        dd{
-            .num_section{
+
+        dd {
+            .num_section {
                 position: relative;
-                .num_box{
+
+                .num_box {
                     position: relative;
                     width: 106px;
                     float: left;
                     z-index: 10;
-                    .num{
+
+                    .num {
                         width: 73px;
                         height: 38px;
                         line-height: 38px;
@@ -129,7 +145,8 @@ ul li img {
                         border: 1px solid #e6e6e6;
                         font-size: 14px;
                     }
-                    .num_pre{
+
+                    .num_pre {
                         background: url(https://s.maiyaole.com/images/product/icon_detail.png?t==20141219) no-repeat;
                         background-position: -131px -842px;
                         height: 19px;
@@ -141,7 +158,8 @@ ul li img {
                         border: none;
                         cursor: pointer;
                     }
-                    .num_next{
+
+                    .num_next {
                         background: url(https://s.maiyaole.com/images/product/icon_detail.png?t==20141219) no-repeat;
                         background-position: -131px -863px;
                         height: 19px;
@@ -157,7 +175,8 @@ ul li img {
             }
         }
     }
-    button{
+
+    button {
         background: url(https://s.maiyaole.com/images/product/icon_detail.png?t==20141219) no-repeat;
         background-color: #e72418;
         background-position: 50px -763px;
@@ -170,6 +189,5 @@ ul li img {
         color: #fff;
         font-size: 18px;
         cursor: pointer;
-        
     }
 }

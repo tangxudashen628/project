@@ -55,3 +55,16 @@ table {
 a{
 	text-decoration: none;
 }
+.clear-box {
+    clear: both;
+}
+
+
+
+li {
+    list-style: none;
+}
+em{font-style: normal}
+b{font-style: normal}
+.left{float: left;}
+.right{float: right;}

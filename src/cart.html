@@ -126,6 +126,10 @@
             </ol>
         </div>
     </div>
+
+
+
+
     <!-- 购物车 -->
     <div class="wrapper">
         <div class="cart-first-bar">
@@ -147,9 +151,8 @@
                         <div class="select-all J_SelectAll">
                             <label>
                                 <label class="cart-checkbox  cart-checkbox-selected  ">
-                                    <input type="checkbox" onclick="checkAll(this);" name="allselect" autocomplete="off"
-                                        checked="checked">
-                                   </label>
+                                    <input type="checkbox" checked="checked">
+                                </label>
                                 全选
                             </label>
 
@@ -164,9 +167,7 @@
                     <div class="th th-amount">
                         数量
                     </div>
-                    <div class="th th-weight">
-                        重量
-                    </div>
+
                     <div class="th th-location">
                         &nbsp;
                     </div>
@@ -179,17 +180,72 @@
                 </div>
             </div>
         </div>
-        <div class="order">
+
+    </div>
+
+
+    <div class="wrapper " id="shop">
+        <div class="shop-car-box" style="display: none">
             <ul>
-           
+                <li class="car-chk left">
+                    <div class="car-chk-box">
+                        <div class="right">
+                            <input type="checkbox">
+                        </div>
+                        <div class="clear-box"></div>
+                    </div>
+
+                </li>
+                <li class="car-pic left">
+                    <div>
+                        <div class="car-pic-left">
+                            <a href="javascript:;">
+                                <img src="">
+                            </a>
+                        </div>
+                        <div class="car-pic-right">
+                            <div>
+                                <a href="javascript:;">
+
+                                </a>
+                            </div>
+                        </div>
+                        <div class="clear-box"></div>
+                    </div>
+                </li>
+                <li class=" car-init left"></li>
+                <li class="car-pir left">
+                    <div>
+                        ￥<i></i>
+                    </div>
+                </li>
+                <li class="car-num left">
+                    <span class="num-left">-</span>
+                    <span class="car-num-box">1</span>
+                    <span class="num-right">+</span>
+                </li>
+                <li class="car-money left">
+                    <span>￥<i></i></span>
+                </li>
+                <li class="car-del left">
+                    <a href="javascript:;">删除</a>
+                </li>
+                <li class="clear-box"></li>
+
             </ul>
+
         </div>
+
     </div>
     <!-- 底部 -->
     <div class="footer"></div>
-    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
-    <script>
 
+
+
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
+    <script src="script/js/jquery.cookie.js"></script>
+    <script src="script/js/cart.js"></script>
+    <script>
         $('.footer').load('_footer.html')
     </script>
 </body>

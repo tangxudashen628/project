@@ -31,13 +31,12 @@
                 Hi,欢迎注册！
             </h2>
             <!-- 表单 -->
-            <div class="form">
+            <form action="http://10.31.163.74/homework/projectname/project/php/registor.php" class="form" method="POST">
                 <div class="length">
-                    <input placeholder="手机号" class="form-control phone" maxlength="100" type="text">
+                    <input placeholder="手机号" class="form-control phone" maxlength="100" type="text" name="tel">
                     <div></div>
-                    <i class="i_empty">不能为空</i>
-                    <i class="i_true"></i>
-                    <span></span>
+                    <label class="i_empty error" for="tel">不能为空</label>
+               
                 </div>
                 <div class="caps">
                     <i class="caps-i"></i>
@@ -46,11 +45,11 @@
                 </div>
                 <div class="length">
                     <!-- 密码 -->
-                    <input type="password" placeholder="登录密码" class="form-control pass">
-                    <i class="i_empty">不能为空</i>
+                    <input type="password" placeholder="登录密码" class="form-control pass" name="password" id="password">
+                    <label class="i_empty error" for="password">不能为空</label>
                     <span class="password-tip">6-20位字符，建议由字母，数字和符号两种以上组合</span>
-                    <span class="error" style="display: none">密码不能为空</span>
-                     <i class="i_true"></i>
+                    <label class="error" style="display: none">密码不能为空</label>
+                     <!-- <i class="i_true"></i> -->
                     <div class="passsafety">
                         <ul>
                             <li>弱</li>
@@ -62,11 +61,11 @@
                 </div>
                 <div class="length">
                     <!-- 确认密码 -->
-                    <input type="password" placeholder="确认密码" class="form-control surepass">
+                    <input type="password" placeholder="确认密码" class="form-control surepass" name="repass">
                     <i class="i_true"></i>
                    
                     <span class="password-tip2" style="display: none">请再次输入登录密码</span>
-                    <span class="error" style="display: none">确认密码不能为空 </span>
+                    <label class="error" for="repass">确认密码不能为空 </label>
                 </div>
                
                 
@@ -79,7 +78,7 @@
                             <a class="blue_link" href="#">《隐私条款》</a>
                         </span>
                     </label>
-                    <button class="btn ">立即注册</button>
+                    <input type="submit" class="btn" value="注册" name="submit" >
                 </div>
                 <div class="length partner">
                     <p>使用合作伙伴账号登录：</p>
@@ -90,7 +89,7 @@
                     <a href="#">万里通</a>
                     <a href="#">网易</a>
                 </div>
-            </div>
+            </form>
         </div>
     </div>
     <!-- 底部 -->
@@ -99,6 +98,8 @@
 
 
     <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
+    <script src="script/js/jquery.validate.js"></script>
+    <script src="script/js/registor.js"></script>
     <script>
         $('.footer').load('_footer.html')
     </script>

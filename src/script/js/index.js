@@ -145,32 +145,32 @@
     }).done(function (data) {
         //拼接135数据
         var $floor1 = $('.floor-r-1');
-        var $floor3=$('.floor-r-3');
-        var $floor5=$('.floor-r-5');
+        var $floor3 = $('.floor-r-3');
+        var $floor5 = $('.floor-r-5');
         var $str = '';
         $str += `
-                <a href="details.html?sid=${data[14].sid}"><img src="${data[14].url}"></a>
-                <a href="details.html?sid=${data[0].sid}"><img src="${data[0].url}"></a>
-                <a href="details.html?sid=${data[1].sid}"><img src="${data[1].url}"></a>
+                <a href="details.html?sid=${data[14].sid}"><img data-original="${data[14].url}" class="lazy" width="625" height="284"></a>
+                <a href="details.html?sid=${data[0].sid}"><img data-original="${data[0].url}" class="lazy" width="190" height="284"></a>
+                <a href="details.html?sid=${data[1].sid}"><img data-original="${data[1].url}" class="lazy" width="190" height="284"></a>
                 <ul>
                     <li>
-                        <a href="details.html?sid=${data[2].sid}"><img src="${data[2].url}"></a>
+                        <a href="details.html?sid=${data[2].sid}"><img data-original="${data[2].url}" class="lazy" width="100" height="100"></a>
                         <a href="details.html?sid=${data[2].sid}" class="main-title">${data[2].title}</a>
                         <p>${data[2].price}</p>
                     </li>
-                    <li> <a href="details.html?sid=${data[3].sid}"><img src="${data[3].url}"></a>
+                    <li> <a href="details.html?sid=${data[3].sid}"><img data-original="${data[3].url}" class="lazy" width="100" height="100"></a>
                         <a href=details.html?sid=${data[3].sid} class="main-title">${data[3].title}</a>
                         <p>${data[3].price}</p>
                     </li>
-                    <li> <a href="details.html?sid=${data[4].sid}"><img src="${data[4].url}"></a>
+                    <li> <a href="details.html?sid=${data[4].sid}"><img data-original="${data[4].url}" class="lazy" width="100" height="100"></a>
                         <a href="details.html?sid=${data[4].sid}" class="main-title">${data[4].title}</a>
                         <p>${data[4].price}</p>
                     </li>
-                    <li> <a href="details.html?sid=${data[5].sid}"><img src="${data[5].url}"></a>
+                    <li> <a href="details.html?sid=${data[5].sid}"><img data-original="${data[5].url}" class="lazy" width="100" height="100"></a>
                         <a href="details.html?sid=${data[5].sid}" class="main-title">${data[5].title}</a>
                         <p>${data[5].price}</p>
                     </li>
-                    <li><a href="details.html?sid=${data[6].sid}"><img src="${data[6].url}"></a>
+                    <li><a href="details.html?sid=${data[6].sid}"><img data-original="${data[6].url}" class="lazy" width="100" height="100"></a>
                         <a href="details.html?sid=${data[6].sid}" class="main-title">${data[6].title}</a>
                         <p>${data[6].price}</p>
                     </li>
@@ -181,56 +181,71 @@
         $floor5.html($str);
 
         //拼接246数据
-        var $floor2=$('.floor-r-2');
-        var $floor4=$('.floor-r-4');
-        var $floor6=$('.floor-r-6');
-        $str='';
+        var $floor2 = $('.floor-r-2');
+        var $floor4 = $('.floor-r-4');
+        var $floor6 = $('.floor-r-6');
+        $str = '';
         $str += `
-                <a href="details.html?sid=${data[15].sid}"><img src="${data[15].url}"></a>
-                <a href="details.html?sid=${data[7].sid}"><img src="${data[7].url}"></a>
-                <a href="details.html?sid=${data[8].sid}"><img src="${data[8].url}"></a>
+                <a href="details.html?sid=${data[15].sid}"><img data-original="${data[15].url}" class="lazy" width="625" height="284"></a>
+                <a href="details.html?sid=${data[7].sid}"><img data-original="${data[7].url}" class="lazy" width="190" height="284"></a>
+                <a href="details.html?sid=${data[8].sid}"><img data-original="${data[8].url}" class="lazy" width="190" height="284"></a>
                 <ul>
                     <li>
-                        <a href="details.html?sid=${data[9].sid}"><img src="${data[9].url}"></a>
+                        <a href="details.html?sid=${data[9].sid}"><img data-original="${data[9].url}" class="lazy" width="100" height="100"></a>
                         <a href="details.html?sid=${data[9].sid}" class="main-title">${data[9].title}</a>
                         <p>${data[9].price}</p>
                     </li>
-                    <li> <a href="details.html?sid=${data[10].sid}"><img src="${data[10].url}"></a>
+                    <li> <a href="details.html?sid=${data[10].sid}"><img data-original="${data[10].url}" class="lazy" width="100" height="100"></a>
                         <a href=details.html?sid=${data[10].sid} class="main-title">${data[10].title}</a>
                         <p>${data[10].price}</p>
                     </li>
-                    <li> <a href="details.html?sid=${data[11].sid}"><img src="${data[11].url}"></a>
+                    <li> <a href="details.html?sid=${data[11].sid}"><img data-original="${data[11].url}" class="lazy" width="100" height="100"></a>
                         <a href="details.html?sid=${data[11].sid}" class="main-title">${data[11].title}</a>
                         <p>${data[11].price}</p>
                     </li>
-                    <li> <a href="details.html?sid=${data[12].sid}"><img src="${data[12].url}"></a>
+                    <li> <a href="details.html?sid=${data[12].sid}"><img data-original="${data[12].url}" class="lazy" width="100" height="100"></a>
                         <a href="details.html?sid=${data[12].sid}" class="main-title">${data[12].title}</a>
                         <p>${data[12].price}</p>
                     </li>
-                    <li><a href="details.html?sid=${data[13].sid}"><img src="${data[13].url}"></a>
+                    <li><a href="details.html?sid=${data[13].sid}"><img data-original="${data[13].url}" class="lazy" width="100" height="100"></a>
                         <a href="details.html?sid=${data[13].sid}" class="main-title">${data[13].title}</a>
                         <p>${data[13].price}</p>
                     </li>
                 </ul>
             `;
-            $floor2.html($str);
-            $floor4.html($str);
-            $floor6.html($str);
-        // //把sid传给后端
-        // var $a=$('.floor-r-1 ul li a');
-        // // console.log(window.location.href.split('=')[1])
-        
-        // $a.on('click',function(){
-        
-        //     $.ajax({
-        //         url:'',
-        //         data:{
-        //             $sid:window.location.href.split('=')[1],
-        //         }
-        //     })
-        // })
-
-
+        $floor2.html($str);
+        $floor4.html($str);
+        $floor6.html($str);
+        //懒加载
+        $(function () {
+            $("img.lazy").lazyload({
+                effect: "fadeIn"
+            });
+        });
     })
+})();
+
+// 登录成功后改变用户名
+; (function () {
+    setTimeout(function () {
+        var $afterlogin = $('.header-nav-right .login .red');
+        var $registor = $('.login .black');
+        if ($.cookie('tel') == undefined) {//如果不存在cookie
+            $afterlogin.html('登录').attr('href','http://10.31.163.74/homework/projectname/project/src/login.html');
+            $registor.html('注册').attr('href','http://10.31.163.74/homework/projectname/project/src/registor.html');
+        //如果存在cookie改变登录注册的跳转路径
+        } else {
+            $afterlogin.html($.cookie('tel')).attr('href','javascript:;');
+            $registor.html('退出').attr('href','javascript:;')
+            
+        }
+        //点击退出时删除cookir并刷新页面
+        $registor.on('click', function () {
+            $.cookie('tel', null,{ expires: -1 })
+            location.reload()
+        })
+       
+    })
+
 })();
 

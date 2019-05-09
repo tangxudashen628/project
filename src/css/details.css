@@ -16,13 +16,12 @@
   height: 300px; }
 
 #sf {
-  width: 100px;
-  height: 100px;
   background: orange;
   opacity: 0.3;
   position: absolute;
   left: 0px;
   top: 0px;
+  display: none;
   cursor: move; }
 
 #bf {
@@ -33,19 +32,22 @@
   float: left;
   overflow: hidden;
   position: absolute;
-  left: 420px;
-  top: 0; }
+  left: 300px;
+  top: 0;
+  display: none; }
 
-#bf img {
+#bpic {
   position: absolute;
   left: 0px;
-  top: 0px; }
+  top: 0px;
+  width: 800px;
+  height: 800px; }
 
 #ulist {
   position: absolute;
   left: 0px;
   bottom: 15px;
-  width: 402px;
+  width: 312px;
   height: 56px;
   overflow: hidden; }
 
@@ -83,6 +85,19 @@ ul li img {
   width: 52px;
   height: 52px;
   border: 1px solid #ccc; }
+
+#right {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  color: #333; }
+
+#left {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 2;
+  color: #fff; }
 
 .box_right .clearfix {
   height: 40px;

@@ -49,7 +49,7 @@
                         <div class="password length">
                             <input type="password" placeholder="登录密码" class="pass">
                             <span class="tip"><a href="#">忘记密码？</a></span>
-                            <span></span>
+                            <span class="error-tip"></span>
                         </div>
                         <div class="yzm length">
                             <input type="text" placeholder="验证码" class="yanzcode">
@@ -63,7 +63,7 @@
                                 <input type="checkbox" class="check">
                                 <span class="twoweeks">两周内免登录</span>
                             </label>
-                            <button>登录</button><br>
+                            <input type="button" name="submit" class="button" value="登录"></input><br>
                             <span></span>
                         </div>
                         <div class="agree">
@@ -88,6 +88,8 @@
 
     </div>
     <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
+    <script src="script/js/jquery.cookie.js"></script>
+    <script src="script/js/login.js"></script>
     <script>
     $('.footer').load('_footer.html')
     </script>
