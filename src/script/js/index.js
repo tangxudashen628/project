@@ -144,6 +144,7 @@
         dataType: 'json',
     }).done(function (data) {
         //拼接135数据
+        console.log(data)
         var $floor1 = $('.floor-r-1');
         var $floor3 = $('.floor-r-3');
         var $floor5 = $('.floor-r-5');

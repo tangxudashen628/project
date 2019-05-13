@@ -8,7 +8,7 @@
     <title>购物车</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/cart.css">
-
+    <link rel="shortcut icon" href="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=4215339962,767477946&fm=26&gp=0.jpg" >
 </head>
 
 <body>
@@ -151,7 +151,7 @@
                         <div class="select-all J_SelectAll">
                             <label>
                                 <label class="cart-checkbox  cart-checkbox-selected  ">
-                                    <input type="checkbox" checked="checked">
+                                    <input type="checkbox" checked="checked" class="allsel">
                                 </label>
                                 全选
                             </label>
@@ -183,14 +183,13 @@
 
     </div>
 
-
     <div class="wrapper " id="shop">
         <div class="shop-car-box" style="display: none">
             <ul>
                 <li class="car-chk left">
                     <div class="car-chk-box">
                         <div class="right">
-                            <input type="checkbox">
+                            <input type="checkbox" checked="checked">
                         </div>
                         <div class="clear-box"></div>
                     </div>
@@ -243,7 +242,7 @@
 
 
     <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
-    <script src="script/js/jquery.cookie.js"></script>
+    <script src="script/thirdplugins/jquery.cookie.js"></script>
     <script src="script/js/cart.js"></script>
     <script>
         $('.footer').load('_footer.html')

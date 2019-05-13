@@ -13,8 +13,8 @@
         var $wrap = $('.wrap');
         var $arr = data[0].urlist.split(',');
         $spic = $('#spic img');
-        $bpic = $('#bpic')
-        $ul = $('#list ul')
+        $bpic = $('#bpic');
+        $ul = $('#list ul');
 
         //小图
         $.each($arr, function (index, value) {
